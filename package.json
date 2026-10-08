@@ -1,0 +1,14 @@
+{
+  "name": "fitness",
+  "version": "1.0.0",
+  "description": "FITNESS full-stack website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

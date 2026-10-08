@@ -1,0 +1,21 @@
+# FITNESS - robots.txt
+User-agent: *
+Allow: /
+
+# Private / non-public application routes
+Disallow: /pages/login.html
+Disallow: /pages/register.html
+Disallow: /pages/dashboard.html
+Disallow: /pages/admin.html
+
+# Backend / internal project files
+Disallow: /api/
+Disallow: /database/
+Disallow: /routes/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /server.js
+Disallow: /package.json
+Disallow: /package-lock.json
+
+Sitemap: http://localhost:3000/sitemap.xml

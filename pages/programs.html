@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FITNESS | برنامه‌های تمرینی Fitness</title>
+    <meta
+  name="description"
+  content="برنامه‌های تمرینی FITNESS برای اهداف مختلف مانند عضله‌سازی، چربی‌سوزی، قدرت و آمادگی جسمانی."
+/>
+
+<meta
+  name="robots"
+  content="index, follow"
+/>
+
+<meta
+  name="theme-color"
+  content="#0b0b0b"
+/>
+
+<meta
+  property="og:type"
+  content="website"
+/>
+
+<meta
+  property="og:title"
+  content="FITNESS | برنامه‌های تمرینی Fitness"
+/>
+
+<meta
+  property="og:description"
+  content="برنامه‌های تمرینی متناسب با هدف و سطح تمرینی در FITNESS."
+/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+            </span>
+
+            <span class="logo-text">
+                FITNESS
+            </span>
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+
+            <a href="../index.html" class="nav-link">
+                خانه
+            </a>
+
+            <a href="programs.html" class="nav-link active">
+                برنامه‌ها
+            </a>
+
+            <a href="trainers.html" class="nav-link">
+                مربی‌ها
+            </a>
+
+            <a href="about.html" class="nav-link">
+                درباره ما
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                تماس
+            </a>
+
+        </nav>
+
+
+        <!-- Header Action -->
+        <a href="contact.html" class="header-btn">
+            شروع کنید
+            <i class="bi bi-arrow-left"></i>
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-btn"
+            type="button"
+            aria-label="باز کردن منو"
+            aria-expanded="false"
+        >
+            <i class="bi bi-list"></i>
+        </button>
+
+    </div>
+</header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Programs Hero -->
+       <section class="page-hero">
+
+    <div class="container">
+
+        <div class="page-hero-content">
+
+            <span class="section-label">
+                <i class="bi bi-fire"></i>
+                برنامه‌های تمرینی
+            </span>
+
+            <h1>
+                برنامه‌ای متناسب با
+                <span>هدف تو</span>
+            </h1>
+
+            <p>
+                از عضله‌سازی و افزایش قدرت تا چربی‌سوزی و
+                بهبود آمادگی جسمانی؛ برنامه مناسب خودت را پیدا کن
+                و قدم بعدی را با FitCore شروع کن.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Programs -->
+    <section class="programs-page">
+
+    <div class="container">
+
+        <div class="programs-header">
+
+            <div>
+                <span class="section-label">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    برنامه‌های FitCore
+                </span>
+
+                <h2>
+                    برنامه تمرینی مناسب
+                    <span>هدف تو</span>
+                </h2>
+                
+            </div>
+
+            <p>
+                برنامه موردنظرت را انتخاب کن و با یک مسیر
+                مشخص، تمریناتت را شروع کن.
+            </p>
+
+        </div>
+
+
+<!-- =====================================
+     PROGRAM FILTER
+===================================== -->
+
+<div class="program-filters">
+
+    <button
+        type="button"
+        class="filter-btn active"
+        data-filter="all"
+    >
+        همه
+    </button>
+
+    <button
+        type="button"
+        class="filter-btn"
+        data-filter="muscle"
+    >
+        عضله‌سازی
+    </button>
+
+    <button
+        type="button"
+        class="filter-btn"
+        data-filter="fat-loss"
+    >
+        چربی‌سوزی
+    </button>
+
+    <button
+        type="button"
+        class="filter-btn"
+        data-filter="strength"
+    >
+        قدرت
+    </button>
+
+    <button
+        type="button"
+        class="filter-btn"
+        data-filter="fitness"
+    >
+        Fitness
+    </button>
+
+</div>
+
+
+        <div class="programs-grid">
+
+            <!-- Program 1 -->
+           <article
+    class="program-card"
+    data-category="muscle"
+data-program-id="1"
+>
+
+                <div class="program-image">
+                    <img
+                        src="../images/body-building.jfif"
+                        alt="برنامه عضله‌سازی"
+                    >
+
+                    <span class="program-level">
+                        متوسط
+                    </span>
+                </div>
+
+                <div class="program-content">
+
+                    <span class="program-category">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                        عضله‌سازی
+                    </span>
+
+                    <h3>
+                        برنامه حجم و عضله‌سازی
+                    </h3>
+
+                    <p>
+                        برنامه‌ای برای افزایش حجم عضلات و
+                        ساختن بدنی قدرتمند و متناسب.
+                    </p>
+
+                    <div class="program-meta">
+
+                        <span>
+                            <i class="bi bi-calendar3"></i>
+                            ۸ هفته
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bar-chart-fill"></i>
+                            ۴ روز در هفته
+                        </span>
+
+                    </div>
+
+                    <a href="program-details.html" class="program-btn">
+                        مشاهده برنامه
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Program 2 -->
+           <article
+    class="program-card"
+    data-category="fat-loss"
+data-program-id="2"
+>
+
+                <div class="program-image">
+                    <img
+                        src="../images/fat-loss.jfif"
+                        alt="برنامه چربی‌سوزی"
+                    >
+
+                    <span class="program-level">
+                        مبتدی
+                    </span>
+                </div>
+
+                <div class="program-content">
+
+                    <span class="program-category">
+                        <i class="bi bi-fire"></i>
+                        چربی‌سوزی
+                    </span>
+
+                    <h3>
+                        برنامه چربی‌سوزی و فرم‌دهی
+                    </h3>
+
+                    <p>
+                        ترکیبی از تمرینات هوازی و قدرتی برای
+                        کاهش چربی و بهبود فرم بدن.
+                    </p>
+
+                    <div class="program-meta">
+
+                        <span>
+                            <i class="bi bi-calendar3"></i>
+                            ۶ هفته
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bar-chart-fill"></i>
+                            ۳ روز در هفته
+                        </span>
+
+                    </div>
+
+                    <a href="program-details.html" class="program-btn">
+                        مشاهده برنامه
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Program 3 -->
+            <article
+    class="program-card"
+    data-category="strength"
+data-program-id="3"
+>
+
+                <div class="program-image">
+                    <img
+                        src="../images/strengh.jfif"
+                        alt="برنامه افزایش قدرت"
+                    >
+
+                    <span class="program-level">
+                        پیشرفته
+                    </span>
+                </div>
+
+                <div class="program-content">
+
+                    <span class="program-category">
+                        <i class="bi bi-trophy-fill"></i>
+                        قدرت
+                    </span>
+
+                    <h3>
+                        برنامه افزایش قدرت
+                    </h3>
+
+                    <p>
+                        تمرکز بر حرکات پایه و افزایش تدریجی قدرت
+                        برای عملکرد بهتر در تمرینات.
+                    </p>
+
+                    <div class="program-meta">
+
+                        <span>
+                            <i class="bi bi-calendar3"></i>
+                            ۱۰ هفته
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bar-chart-fill"></i>
+                            ۵ روز در هفته
+                        </span>
+
+                    </div>
+
+                    <a href="program-details.html" class="program-btn">
+                        مشاهده برنامه
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Program 4 -->
+            <article
+    class="program-card"
+    data-category="fitness"
+data-program-id="4"
+>
+
+                <div class="program-image">
+                    <img
+                        src="../images/fitness.jfif"
+                        alt="برنامه آمادگی جسمانی"
+                    >
+
+                    <span class="program-level">
+                        مبتدی
+                    </span>
+                </div>
+
+                <div class="program-content">
+
+                    <span class="program-category">
+                        <i class="bi bi-person-arms-up"></i>
+                        Fitness
+                    </span>
+
+                    <h3>
+                        برنامه آمادگی جسمانی
+                    </h3>
+
+                    <p>
+                        برنامه‌ای متعادل برای افزایش استقامت،
+                        تحرک و آمادگی عمومی بدن.
+                    </p>
+
+                    <div class="program-meta">
+
+                        <span>
+                            <i class="bi bi-calendar3"></i>
+                            ۸ هفته
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bar-chart-fill"></i>
+                            ۳ روز در هفته
+                        </span>
+
+                    </div>
+
+                    <a href="program-details.html" class="program-btn">
+                        مشاهده برنامه
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+ <footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="footer-logo"
+                >
+
+                    <span class="footer-logo-icon">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </span>
+
+                    <span class="footer-logo-text">
+                        FITCORE
+                    </span>
+
+                </a>
+
+                <p class="footer-description">
+                    یک مسیر ساده‌تر، منظم‌تر و حرفه‌ای‌تر
+                    برای رسیدن به هدف‌های ورزشی.
+                </p>
+
+
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Telegram">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+
+                    <a
+                        href="mailto:hello@fitcore-demo.com"
+                        aria-label="Email"
+                    >
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    دسترسی سریع
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            خانه
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="programs.html">
+                            برنامه‌ها
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="trainers.html">
+                            مربی‌ها
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            درباره ما
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            تماس با ما
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="footer-column">
+
+                <h3>
+                    خدمات
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            برنامه بدنسازی
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            عضله‌سازی
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            چربی‌سوزی
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Fitness
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            مربی اختصاصی
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>
+                    ارتباط با ما
+                </h3>
+
+                <div class="footer-contact-item">
+
+                    <i class="bi bi-envelope"></i>
+
+                    <a href="mailto:hello@fitcore-demo.com">
+                        hello@fitcore-demo.com
+                    </a>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="bi bi-telephone"></i>
+
+                    <a href="tel:+982112345678">
+                        ۰۲۱-۱۲۳۴۵۶۷۸
+                    </a>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <span>
+                        تهران، ایران
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                ©
+                <span id="current-year"></span>
+                FITCORE.
+                تمامی حقوق محفوظ است.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    حریم خصوصی
+                </a>
+
+                <a href="#">
+                    قوانین استفاده
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    <script src="../js/auth-ui.js"></script>
+    <script src="../js/programs-api.js"></script>
+
+</body>
+
+</html>
