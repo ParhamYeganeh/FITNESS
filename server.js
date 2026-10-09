@@ -6,6 +6,7 @@ const db = require("./database/db");
 
 const statusRoutes = require("./routes/status");
 const programRoutes = require("./routes/programs");
+const workoutRoutes = require("./routes/workouts");
 const trainerRoutes = require("./routes/trainers");
 const aboutRoutes = require("./routes/about");
 const pricingRoutes = require("./routes/pricing");
@@ -476,6 +477,11 @@ app.use(
 app.use(
     "/api",
     programRoutes
+);
+
+app.use(
+    "/api",
+    workoutRoutes
 );
 
 app.use(
