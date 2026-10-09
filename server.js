@@ -651,11 +651,10 @@ app.use(
     express.static(
         __dirname,
         {
-            index: false
+            index: "index.html"
         }
     )
 );
-
 
 /*
  * =====================================================
