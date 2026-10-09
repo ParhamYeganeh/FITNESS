@@ -18,6 +18,7 @@ const fs =
  */
 
 const databaseDirectory =
+    process.env.DATABASE_DIR ||
     __dirname;
 
 const databasePath =
