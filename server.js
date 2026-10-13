@@ -13,7 +13,6 @@ const pricingRoutes = require("./routes/pricing");
 const contactRoutes = require("./routes/contact");
 const authRoutes = require("./routes/auth");
 const adminRoutes = require("./routes/admin");
-
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -483,6 +482,8 @@ app.use(
     "/api",
     workoutRoutes
 );
+
+
 
 app.use(
     "/api",
